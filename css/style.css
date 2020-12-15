@@ -8,6 +8,19 @@
 
 body {
     background-color: #202020;
+    margin: 0px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
 }
 
 .dit, .dah {
@@ -16,7 +29,7 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: #FF4D5A;
-    float:left;
+    float: left;
 }
 
 .dit {
