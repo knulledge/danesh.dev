@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Brush Script MT', cursive;
+    color: white;
     background-color: #202020;
     margin: 0px;
 }
@@ -39,4 +40,16 @@ body {
 
 .dah {
     width: calc(var(--morse-size) * 3.5);
+}
+
+.name {
+    font-size: 72px;
+    line-height: 50px;
+    margin:0px 0px 8px 0px;
+}
+
+.description {
+    font-size: 32px;
+    line-height: 0px;
+    margin:0px 16px 8px 0px;
 }
