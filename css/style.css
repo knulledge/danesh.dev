@@ -1,4 +1,6 @@
 :root {
+    --bg-color: #202020;
+    --accent-color: #FF4D5A;
     --morse-size: 50px;
 }
 
@@ -9,7 +11,7 @@
 body {
     font-family: 'Brush Script MT', cursive;
     color: white;
-    background-color: #202020;
+    background-color: var(--bg-color);
     margin: 0px;
 }
 
@@ -30,7 +32,7 @@ body {
     border-radius: calc(var(--morse-size) / 2);
     border-width: 6px;
     border-style: solid;
-    border-color: #FF4D5A;
+    border-color: var(--accent-color);
     margin-right: 16px;
 }
 
@@ -52,4 +54,8 @@ body {
     font-size: 32px;
     line-height: 0px;
     margin:0px 16px 8px 0px;
+}
+
+.l-color {
+    color: var(--accent-color);
 }
