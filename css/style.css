@@ -56,6 +56,6 @@ body {
     margin:0px 16px 8px 0px;
 }
 
-.l-color {
+.description span{
     color: var(--accent-color);
 }
