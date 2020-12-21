@@ -1,8 +1,7 @@
-:root {
-    --bg-color: #202020;
-    --accent-color: #FF4D5A;
-    --morse-size: 50px;
-}
+/*
+--bg-color: #202020;
+--accent-color: #FF4D5A;
+*/
 
 * {
     margin: 0;
@@ -13,7 +12,7 @@
 body {
     font-family: 'Brush Script MT', cursive;
     color: white;
-    background-color: var(--bg-color);
+    background-color:  #202020;
 }
 
 header {
@@ -58,20 +57,20 @@ header {
 }
 
 .dit, .dah {
-    height: var(--morse-size);
-    border-radius: calc(var(--morse-size) / 2);
+    height: 50px;
+    border-radius: 25px;
     border-width: 6px;
     border-style: solid;
-    border-color: var(--accent-color);
+    border-color:  #FF4D5A;
     margin-right: 16px;
 }
 
 .dit {
-    width: var(--morse-size);
+    width: 50px;
 }
 
 .dah {
-    width: calc(var(--morse-size) * 3.5);
+    width: 175px
 }
 
 .name {
@@ -87,5 +86,5 @@ header {
 }
 
 .description span{
-    color: var(--accent-color);
+    color:  #FF4D5A;
 }
