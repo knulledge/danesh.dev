@@ -29,7 +29,7 @@ header {
 }
 
 .header-bg:nth-child(1) {
-    z-index: -2;
+    z-index: -3;
     width: 90vw;
     height: 90vh;
     transform: skew(8deg);
@@ -37,11 +37,18 @@ header {
 }
 
 .header-bg:nth-child(2) {
-    z-index: -1;
+    z-index: -2;
     width: 92vw;
     height: 84vh;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
     background-color: #202020;
+}
+
+.header-bg-title {
+    position: absolute;
+    z-index: -1;
+    font-size: 17vw;
+    color: #1d1d1d;
 }
 
 .main {
