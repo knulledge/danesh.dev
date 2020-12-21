@@ -5,6 +5,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,7 +14,35 @@ body {
     font-family: 'Brush Script MT', cursive;
     color: white;
     background-color: var(--bg-color);
-    margin: 0px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg {
+    position: absolute;
+    border-radius: 40px;
+}
+
+.header-bg:nth-child(1) {
+    z-index: -2;
+    width: 90vw;
+    height: 90vh;
+    transform: skew(8deg);
+    background-color: #FF4D5A;
+}
+
+.header-bg:nth-child(2) {
+    z-index: -1;
+    width: 92vw;
+    height: 84vh;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
+    background-color: #202020;
 }
 
 .main {
