@@ -16,10 +16,9 @@ body {
 }
 
 header {
-    /* width: 100vw; */
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -58,17 +57,10 @@ header {
     color: #1d1d1d;
 }
 
-.main {
-    width: 88vw;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flex-row {
+.header-line {
     display: flex;
     align-items: center;
+    margin-top: 16px;
 }
 
 .dit, .dah {
@@ -88,16 +80,23 @@ header {
     width: 175px
 }
 
-.name {
+.dit:last-child {
+    margin: 0;
+}
+
+.first-name, .last-name {
     font-size: 72px;
     line-height: 50px;
-    margin:0px 0px 8px 0px;
+}
+
+.first-name {
+    margin-left: 87.5px;
 }
 
 .description {
     font-size: 32px;
     line-height: 0px;
-    margin:0px 16px 8px 0px;
+    margin-right: 16px;
 }
 
 .description span{
