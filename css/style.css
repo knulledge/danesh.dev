@@ -93,10 +93,14 @@ header {
     margin-left: 87.5px;
 }
 
+.desc-container {
+    width: 262.5px;
+    margin-right: 16px;
+}
+
 .description {
     font-size: 32px;
-    line-height: 0px;
-    margin-right: 16px;
+    line-height: 0;
 }
 
 .description span{
