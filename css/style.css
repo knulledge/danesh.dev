@@ -86,11 +86,15 @@ header {
 
 .first-name, .last-name {
     font-size: 72px;
-    line-height: 50px;
 }
 
 .first-name {
+    line-height: 50px;
     margin-left: 87.5px;
+}
+
+.last-name {
+    line-height: 0;
 }
 
 .desc-container {
