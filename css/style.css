@@ -29,23 +29,22 @@ header {
     align-items: center;
 }
 
-.first-bg, .second-bg {
-    position: absolute;
-    border-radius: 40px;
-}
-
 .first-bg{
+    position: absolute;
     z-index: -3;
     width: 90vw;
     height: 90vh;
+    border-radius: 48px;
     transform: skew(8deg);
     background-color: #FF4D5A;
 }
 
 .second-bg {
+    position: absolute;   
     z-index: -2;
-    width: 92vw;
-    height: 84vh;
+    width: 91vw;
+    height: 83vh;
+    border-radius: 30px;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
     background-color: #202020;
 }
