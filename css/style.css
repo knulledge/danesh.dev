@@ -80,9 +80,12 @@ header {
 
 .dit rect, .dah rect {
     height: 44px;
+    fill: transparent;
     stroke: #FF4D5A;
     stroke-width: 6px;
-    fill: transparent;
+    stroke-linecap: round;
+    stroke-dasharray: 1;
+    animation: draw .5s ease-in-out forwards;
 }
 
 .dit rect {
@@ -91,6 +94,15 @@ header {
 
 .dah rect {
     width: 169px;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .first-name, .last-name {
