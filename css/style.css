@@ -54,6 +54,15 @@ header {
     z-index: -1;
     font-size: 17vw;
     color: #1d1d1d;
+    opacity: 0;
+    animation: fadein .5s forwards;
+    animation-delay: .15s;
+}
+
+@keyframes fadein {
+    to  {
+        opacity: 1;
+    }
 }
 
 .header-line {
@@ -85,7 +94,8 @@ header {
     stroke-width: 6px;
     stroke-linecap: round;
     stroke-dasharray: 1;
-    animation: draw .5s ease-in-out forwards;
+    stroke-dashoffset: 1;
+    animation: draw .65s ease-in-out forwards;
 }
 
 .dit rect {
@@ -97,12 +107,14 @@ header {
 }
 
 @keyframes draw {
-    from {
-        stroke-dashoffset: 1;
-    }
     to {
         stroke-dashoffset: 0;
     }
+}
+
+.first-name, .last-name, .description {
+    opacity: 0;
+    animation: translate-fadein .3s ease-out forwards;  
 }
 
 .first-name, .last-name {
@@ -112,10 +124,14 @@ header {
 .first-name {
     line-height: 50px;
     margin-left: 87.5px;
+    transform: translateX(-10%);
+    animation-delay: .15s;
 }
 
 .last-name {
     line-height: 0;
+    transform: translateX(12%);
+    animation-delay: .25s;
 }
 
 .desc-container {
@@ -126,8 +142,17 @@ header {
 .description {
     font-size: 32px;
     line-height: 0;
+    transform: translateX(-10%);
+    animation-delay: .35s;
 }
 
 .description span{
     color:  #FF4D5A;
+}
+
+@keyframes translate-fadein{
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
