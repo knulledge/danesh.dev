@@ -63,11 +63,6 @@ header {
 }
 
 .dit, .dah {
-    height: 50px;
-    border-radius: 25px;
-    border-width: 6px;
-    border-style: solid;
-    border-color:  #FF4D5A;
     margin-right: 16px;
 }
 
@@ -76,11 +71,26 @@ header {
 }
 
 .dah {
-    width: 175px
+    width: 175px;
 }
 
 .dit:last-child {
     margin: 0;
+}
+
+.dit rect, .dah rect {
+    height: 44px;
+    stroke: #FF4D5A;
+    stroke-width: 6px;
+    fill: transparent;
+}
+
+.dit rect {
+    width: 44px;
+}
+
+.dah rect {
+    width: 169px;
 }
 
 .first-name, .last-name {
