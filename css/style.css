@@ -33,10 +33,17 @@ header {
     position: absolute;
     z-index: -3;
     width: 90vw;
-    height: 90vh;
+    height: 83vh;
     border-radius: 48px;
-    transform: skew(8deg);
     background-color: #FF4D5A;
+    animation: skewIn .35s ease-out forwards;  
+}
+
+@keyframes skewIn {
+    to {
+        height: 90vh;
+        transform: skewX(8deg);
+    }
 }
 
 .second-bg {
@@ -45,8 +52,14 @@ header {
     width: 91vw;
     height: 83vh;
     border-radius: 30px;
-    box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
     background-color: #202020;
+    animation: shadowIn .35s forwards;  
+}
+
+@keyframes shadowIn {
+    to {
+        box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
+    }
 }
 
 .bg-title {
@@ -55,7 +68,7 @@ header {
     font-size: 17vw;
     color: #1d1d1d;
     opacity: 0;
-    animation: fadein .5s forwards;
+    animation: fadein .3s forwards;
     animation-delay: .15s;
 }
 
@@ -95,7 +108,7 @@ header {
     stroke-linecap: round;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: draw .65s ease-in-out forwards;
+    animation: draw .6s ease-in-out forwards;
 }
 
 .dit rect {
@@ -114,7 +127,7 @@ header {
 
 .first-name, .last-name, .description {
     opacity: 0;
-    animation: translate-fadein .3s ease-out forwards;  
+    animation: translateFadeIn .3s ease-out forwards;  
 }
 
 .first-name, .last-name {
@@ -131,7 +144,7 @@ header {
 .last-name {
     line-height: 0;
     transform: translateX(12%);
-    animation-delay: .25s;
+    animation-delay: .225s;
 }
 
 .desc-container {
@@ -143,14 +156,14 @@ header {
     font-size: 32px;
     line-height: 0;
     transform: translateX(-10%);
-    animation-delay: .35s;
+    animation-delay: .3s;
 }
 
 .description span{
     color:  #FF4D5A;
 }
 
-@keyframes translate-fadein{
+@keyframes translateFadeIn{
     to {
         opacity: 1;
         transform: translateX(0);
