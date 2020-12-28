@@ -37,8 +37,8 @@ header {
 .first-bg{
     position: absolute;
     z-index: -3;
-    width: 90vw;
-    height: 83vh;
+    width: 86vw;
+    height: 81vh;
     border-radius: 48px;
     background-color: #FF4D5A;
     animation: skewIn .35s ease-out forwards;  
@@ -54,7 +54,7 @@ header {
 .second-bg {
     position: absolute;   
     z-index: -2;
-    width: 91vw;
+    width: 87vw;
     height: 83vh;
     border-radius: 30px;
     background-color: #202020;
@@ -70,7 +70,7 @@ header {
 .bg-title {
     position: absolute;
     z-index: -1;
-    font-size: 17em;
+    font-size: 15em;
     color: #1d1d1d;
     opacity: 0;
     animation: fadein .3s forwards;
