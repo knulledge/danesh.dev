@@ -9,8 +9,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1vw;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 1vw;
     color: white;
     background-color: #202020;
 }
@@ -65,7 +70,7 @@ header {
 .bg-title {
     position: absolute;
     z-index: -1;
-    font-size: 17vw;
+    font-size: 17em;
     color: #1d1d1d;
     opacity: 0;
     animation: fadein .3s forwards;
@@ -81,19 +86,19 @@ header {
 .header-line {
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 1.25rem;
 }
 
 .dit, .dah {
-    margin-right: 16px;
+    margin-right: 1.25rem;
 }
 
 .dit {
-    width: 50px;
+    width: 3.9rem;
 }
 
 .dah {
-    width: 175px;
+    width: 13.65rem;
 }
 
 .dit:last-child {
@@ -131,12 +136,12 @@ header {
 }
 
 .first-name, .last-name {
-    font-size: 72px;
+    font-size: 5.6em;
 }
 
 .first-name {
-    line-height: 50px;
-    margin-left: 87.5px;
+    line-height: 3.9rem;
+    margin-left: 6.825rem;
     transform: translateX(-10%);
     animation-delay: .15s;
 }
@@ -147,13 +152,9 @@ header {
     animation-delay: .225s;
 }
 
-.desc-container {
-    width: 262.5px;
-    margin-right: 16px;
-}
-
 .description {
-    font-size: 32px;
+    width: 21.725rem;
+    font-size: 2.5em;
     line-height: 0;
     transform: translateX(-10%);
     animation-delay: .3s;
