@@ -36,7 +36,7 @@ header {
     align-items: center;
 }
 
-.first-bg{
+/* .first-bg{
     position: absolute;
     z-index: -3;
     width: 86vw;
@@ -61,13 +61,13 @@ header {
     border-radius: 30px;
     background-color: #202020;
     animation: shadowIn .35s forwards;  
-}
+} */
 
-@keyframes shadowIn {
+/* @keyframes shadowIn {
     to {
         box-shadow: 0 0 8px 4px rgba(0, 0, 0, .2);
     }
-}
+} */
 
 .bg-title {
     position: absolute;
